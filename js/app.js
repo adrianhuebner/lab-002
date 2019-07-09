@@ -31,7 +31,12 @@ console.log('Asking ' + UserName + 'if they know how many siblings that I have.'
 var typeEducation = prompt('Did I go to private school from Preschool to High School?')
 
 //creating an if/else statement about school
-
+if (typeEducation.toLowerCase() === 'yes') {
+  alert('Yes, against my will, I attended private school from Preschool to High School');
+} else {
+  alert('Actually, I was forced to go to private school from Preschool through High School.')
+}
+console.log('Asking ' + UserName + ' about if I attened private or public schooling.')
 
 // asking the user who caused my love of reading
 var dadReads = prompt('Do you think that it was my dad who helped me begin to love to read?')
