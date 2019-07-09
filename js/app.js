@@ -1,14 +1,6 @@
-// if (some condition is met){
-//   then do something
-// } else  {
-//   do something else
-// }
+"use strict"
 
-var likesToRead = prompt('Do you like to Read?');
-likesToRead = likesToRead.toLowerCase();
-
-if(likesToRead === 'yes' || likesToRead === 'sure') {
-  alert('I love to read as well!');
-} else {
-  alert('Why not?!');
-}
+// asking the user for their name prompt
+var UserName = prompt('Hi! My name is Adrian! What`s your name?')
+alert('Hello ' + UserName + '! It\s nice to meet you! We are going to see how well you know me with a guessing game!')
+console.log('Learning the name of ' + UserName + ' whom, is going to play a game about me!')
