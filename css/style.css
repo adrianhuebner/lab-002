@@ -23,6 +23,8 @@ h4{
   padding: 1%;
   box-sizing: border-box;
   float: right;
+  margin-right: 5%;
+  margin-bottom: .5%;
 }
 
 .AboutEducation{
@@ -33,6 +35,8 @@ h4{
   box-sizing: border-box;
   padding: 1%;
   width: 75%;
+  margin-left:5%;
+  margin-bottom: .5%;
 }
 
 .Books{
@@ -43,4 +47,6 @@ h4{
   box-sizing: border-box;
   padding: 1%;
   width: 75%;
+  margin-right: 5%;
+  margin-bottom: .5%;
 }
