@@ -48,3 +48,14 @@ if (dadReads.toLowerCase() === 'yes') {
   alert('Actually, ' + UserName + ' my dad create my love of reading.');
 }
 console.log('Asking ' + UserName + ' whether or not it was my dad who made me love to read.');
+
+// asking the user if I love Nancy Drew
+var nancyDrew = prompt('Do you think that Nancy Drew is my go to comfort book series?');
+
+// creating an if/else statement about Nancy Drew
+if (nancyDrew.toLowerCase() === 'yes') {
+  alert('Yes, that\s the first thing that my dad ever read to me, so if I ever need something to cheer me up, I read any book in that series!');
+} else{
+  alert('Actually, my that was the first thing that my dad ever read to me, so if I ever am in a bad mood or need to not think about what I am reading I choose that!');
+}
+console.log('Asking ' + UserName + ' if they know that I love Nancy Drew!');
