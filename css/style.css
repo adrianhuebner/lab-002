@@ -5,7 +5,13 @@ body{
 h1{
   font-family: sans-serif;
   text-align: center;
-  font-size: 75px;
+  font-size: 200%;
+  text-decoration: underline;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  background-color: #9e9e9ebf;
+  box-sizing: border-box;
+  width: 70%;
 }
 
 h3{
