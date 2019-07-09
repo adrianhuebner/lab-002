@@ -14,3 +14,15 @@ if (grewUp === 'yes') {
 } else {
   alert('Actually, I did grow up in the same house that my father grew up in!');
 }
+console.log('My first question is asking ' + UserName + ' if they knew that I grew up in the same house as my father.');
+
+// asking the user if they know how many siblings I have
+var siblingAmmount = prompt('Do I have more than one sibling?');
+
+//creating an if/else statement about my sister
+if (siblingAmmount === 'no') {
+  alert('That\s right, I only have one sister!');
+}else {
+  alert('Actually ' + UserName + ' I only have one younger sister.');
+}
+console.log('Asking ' + UserName + 'if they know how many siblings that I have.');
