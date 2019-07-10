@@ -59,3 +59,17 @@ if (nancyDrew.toLowerCase() === 'yes') {
   alert('Actually, my that was the first thing that my dad ever read to me, so if I ever am in a bad mood or need to not think about what I am reading I choose that!');
 }
 console.log('Asking ' + UserName + ' if they know that I love Nancy Drew!');
+
+//beginning of guessing game
+var answer= 450;
+var guess= parseInt(prompt('How many books do you think I own?'));
+
+for (var i =0; i < 3; i++){
+  if (answer === guess){
+    alert('You guessed how bad my obsession of books is!');
+    break;
+  }
+  else{
+    guess= prompt('As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
+  }
+}

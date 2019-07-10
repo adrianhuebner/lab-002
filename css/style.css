@@ -22,6 +22,16 @@ h4{
   text-decoration: underline;
 }
 
+.profile {
+  float: left;
+  width: 50%;
+}
+
+.photo {
+display: block;
+width: 100%;
+}
+
 .ShortBio{
   font-family: sans-serif;
   background-color: whitesmoke;
