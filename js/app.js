@@ -62,14 +62,19 @@ console.log('Asking ' + UserName + ' if they know that I love Nancy Drew!');
 
 //beginning of guessing game
 var answer= 450;
-var guess= parseInt(prompt('How many books do you think I own?'));
+var guess= parseInt(prompt('How many books do you think I own?').toLowerCase());
 
-for (var i =0; i < 3; i++){
-  if (answer === guess){
-    alert('You guessed how bad my obsession of books is!');
-    break;
+for (var i = 0; i < 3; i++){
+  if (guess < 450){
+    guess=prompt ('That number was wrong, perhaps you should try something bigger! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
   }
-  else{
-    guess= prompt('As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
-  }
+    else if (guess > 450){
+      guess= prompt('That number was wrong, it was a little to high! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
+    }
+    else {
+      alert('You know how bad my book obesession is!!');
+    }
 }
+ //
+
+
