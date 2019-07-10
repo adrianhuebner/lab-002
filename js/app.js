@@ -1,4 +1,4 @@
-//"use strict"
+"use strict"
 
 // asking the user for their name prompt
 var UserName = prompt('Hi! My name is Adrian! What`s your name?');
@@ -28,18 +28,18 @@ if (siblingAmmount.toLowerCase() === 'no') {
 console.log('Asking ' + UserName + 'if they know how many siblings that I have.');
 
 // asking the user about where I went to school
-var typeEducation = prompt('Did I go to private school from Preschool to High School?')
+var typeEducation = prompt('Did I go to private school from Preschool to High School?');
 
 //creating an if/else statement about school
 if (typeEducation.toLowerCase() === 'yes') {
   alert('Yes, against my will, I attended private school from Preschool to High School');
 } else {
-  alert('Actually, I was forced to go to private school from Preschool through High School.')
+  alert('Actually, I was forced to go to private school from Preschool through High School.');
 }
-console.log('Asking ' + UserName + ' about if I attened private or public schooling.')
+console.log('Asking ' + UserName + ' about if I attened private or public schooling.');
 
 // asking the user who caused my love of reading
-var dadReads = prompt('Do you think that it was my mom who helped me begin to love to read?')
+var dadReads = prompt('Do you think that it was my mom who helped me begin to love to read?');
 
 // creating an if/else statement about my love of reading
 if (dadReads.toLowerCase() === 'no') {
@@ -61,20 +61,39 @@ if (nancyDrew.toLowerCase() === 'yes') {
 console.log('Asking ' + UserName + ' if they know that I love Nancy Drew!');
 
 //beginning of guessing game
+
 var answer= 450;
-var guess= parseInt(prompt('How many books do you think I own?').toLowerCase());
+var guess= parseInt(prompt('How many books do you think I own?'));
 
 for (var i = 0; i < 3; i++){
   if (guess < 450){
-    guess=prompt ('That number was wrong, perhaps you should try something bigger! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
+    guess =prompt ('That number was wrong, perhaps you should try something bigger! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
+    console.log('I am in the if check');
+    break;
   }
     else if (guess > 450){
-      guess= prompt('That number was wrong, it was a little to high! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
+      guess = prompt('That number was wrong, it was a little to high! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
+      console.log('I am in else if');
     }
     else {
       alert('You know how bad my book obesession is!!');
+      console.log('I am in else');
     }
 }
- //
+
+//  //starting my array work here
+// var answerArray= ['Nancy Drew', 'Pride and Prejudice', 'Harry Potter and the Prisoner of Azkaban', 'Furyborn', 'The Cruel Prince'];
+// escape= false;
+// var numGuesses= 0;
+
+//  while(numGuesses < 6 && escape=false){
+//  var numGuesses= prompt('What are my top 5 favorite books?');
+//   for (i = 0; i < answerArray.length; i++)
+//     if (userGuesses === answerArray[i])
+//       alert('Yay you know this!');
+//       escape = true;
+//       break;
+//  }
+
 
 
