@@ -45,31 +45,36 @@ if (siblingAmmount.toLowerCase() === 'no') {
 }
 console.log('end of function of question2');
 }
-Question2()
+Question2();
 
-// // asking the user about where I went to school
-// var typeEducation = prompt('Did I go to private school from Preschool to High School?');
+// asking the user about where I went to school
 
-// //creating an if/else statement about school
-// if (typeEducation.toLowerCase() === 'yes') {
-//   alert('Yes, against my will, I attended private school from Preschool to High School');
-//   yourScore += 1;
-// } else {
-//   alert('Actually, I was forced to go to private school from Preschool through High School.');
-// }
-// console.log('Asking ' + UserName + ' about if I attened private or public schooling.');
 
-// // asking the user who caused my love of reading
-// var dadReads = prompt('Do you think that it was my mom who helped me begin to love to read?');
+//creating an if/else statement about school
+function Question3(){
+var typeEducation = prompt('Did I go to private school from Preschool to High School?');
+if (typeEducation.toLowerCase() === 'yes') {
+  alert('Yes, against my will, I attended private school from Preschool to High School');
+  yourScore += 1;
+} else {
+  alert('Actually, I was forced to go to private school from Preschool through High School.');
+  console.log('I am in the else statement of question3');
+}
+console.log('End of function for question3');
+}
+Question3();
 
-// // creating an if/else statement about my love of reading
-// if (dadReads.toLowerCase() === 'no') {
-//   alert('It was actually my dad who got me to love reading!');
-//   yourScore +=1;
-// } else{
-//   alert('Actually, ' + UserName + ' it was my dad create my love of reading.');
-// }
-// console.log('Asking ' + UserName + ' whether or not it was my dad who made me love to read.');
+// asking the user who caused my love of reading
+var dadReads = prompt('Do you think that it was my mom who helped me begin to love to read?');
+
+// creating an if/else statement about my love of reading
+if (dadReads.toLowerCase() === 'no') {
+  alert('It was actually my dad who got me to love reading!');
+  yourScore +=1;
+} else{
+  alert('Actually, ' + UserName + ' it was my dad create my love of reading.');
+}
+console.log('Asking ' + UserName + ' whether or not it was my dad who made me love to read.');
 
 // // asking the user if I love Nancy Drew
 // var nancyDrew = prompt('Do you think that Nancy Drew is my go to comfort book series?');
