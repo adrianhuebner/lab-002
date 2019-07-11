@@ -66,34 +66,37 @@ var answer= 450;
 var guess= parseInt(prompt('How many books do you think I own?'));
 
 for (var i = 0; i < 3; i++){
-  if (guess < 450){
-    guess =prompt ('That number was wrong, perhaps you should try something bigger! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
-    console.log('I am in the if check');
+  if (guess === answer){
+    alert('You know how bad my book obesession is!!');
     break;
   }
     else if (guess > 450){
-      guess = prompt('That number was wrong, it was a little to high! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".');
+      guess = parseInt(prompt('That number was wrong, it was a little to high! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".'));
       console.log('I am in else if');
     }
     else {
-      alert('You know how bad my book obesession is!!');
-      console.log('I am in else');
+      guess = parseInt(prompt('That number was wrong, perhaps you should try something bigger! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".'));
+      console.log('I am in the if check');
     }
 }
 
 //  //starting my array work here
-// var answerArray= ['Nancy Drew', 'Pride and Prejudice', 'Harry Potter and the Prisoner of Azkaban', 'Furyborn', 'The Cruel Prince'];
-// escape= false;
-// var numGuesses= 0;
+var answerArray= ['Nancy Drew', 'Pride and Prejudice', 'Harry Potter and the Prisoner of Azkaban', 'Furyborn', 'The Cruel Prince'];
+var escape= false;
+var numGuesses= 0;
+console.log('Starting out my array questions');
 
-//  while(numGuesses < 6 && escape=false){
-//  var numGuesses= prompt('What are my top 5 favorite books?');
-//   for (i = 0; i < answerArray.length; i++)
-//     if (userGuesses === answerArray[i])
-//       alert('Yay you know this!');
-//       escape = true;
-//       break;
-//  }
+ while(numGuesses < 6 && escape === false){
+ var answer= prompt('What are my top 5 favorite books?');
+  for (var i = 0; i < answerArray.length; i++){
+    if (answer === answerArray[i]){
+      alert('Yay you know this!');
+      escape = true;
+      break;
+}
+}
+numGuesses++;
+ }
 
 
 
