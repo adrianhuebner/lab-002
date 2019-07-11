@@ -37,7 +37,7 @@ function Question2(){
 var siblingAmmount = prompt('Do I have more than one sibling?');
 if (siblingAmmount.toLowerCase() === 'no') {
   alert('That\s right, I only have one sister!');
-  yourScore += 1;
+  yourScore ++;
 }else {
   alert('Actually I only have one younger sister.');
   console.log('Asking if they know how many siblings that I have.');
@@ -55,7 +55,7 @@ function Question3(){
 var typeEducation = prompt('Did I go to private school from Preschool to High School?');
 if (typeEducation.toLowerCase() === 'yes') {
   alert('Yes, against my will, I attended private school from Preschool to High School');
-  yourScore += 1;
+  yourScore ++;
 } else {
   alert('Actually, I was forced to go to private school from Preschool through High School.');
   console.log('I am in the else statement of question3');
@@ -65,17 +65,20 @@ console.log('End of function for question3');
 Question3();
 
 // asking the user who caused my love of reading
-var dadReads = prompt('Do you think that it was my mom who helped me begin to love to read?');
+
 
 // creating an if/else statement about my love of reading
+function Question4(){
+var dadReads = prompt('Do you think that it was my mom who helped me begin to love to read?');
 if (dadReads.toLowerCase() === 'no') {
   alert('It was actually my dad who got me to love reading!');
-  yourScore +=1;
+  yourScore ++;
 } else{
-  alert('Actually, ' + UserName + ' it was my dad create my love of reading.');
+  alert('Actually, it was my Dad who gave me my passion for reading.');
 }
-console.log('Asking ' + UserName + ' whether or not it was my dad who made me love to read.');
-
+console.log('End of function question4');
+}
+Question4();
 // // asking the user if I love Nancy Drew
 // var nancyDrew = prompt('Do you think that Nancy Drew is my go to comfort book series?');
 
