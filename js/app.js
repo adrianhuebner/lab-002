@@ -1,6 +1,6 @@
 "use strict"
 
-var yourScore = 0;
+
 
 // function asking the user for their name prompt
 function userName(){
@@ -8,10 +8,14 @@ function userName(){
   alert('Hello ' + UserName + '! It\'s nice to meet you! We are going to see how well you know me with a guessing game!');
   console.log('Function asking user for UserName variable');
 }
-userName()
+userName();
+
+// creating global function yourScore
+
+var yourScore = 0;
 
 // asking the user if they knew where I grew up
-function Grew_up(){
+function Question1(){
   var grewUp = prompt('Did I grow up in the same house that my father did?');
   console.log('Asking user about question 1');
   if (grewUp.toLowerCase() === 'yes') {
@@ -19,31 +23,29 @@ function Grew_up(){
     yourScore ++;
   } else {
     alert('Actually, I did grow up in the same house that my father grew up in!');
+    console.log('in the else statement of first question to user');
   }
-  console.log('in the else statement of first question to user');
+  console.log('end of function of question 1');
 }
-Grew_up()
+Question1();
 
-// creating and if/else statement about where I grew up
-// if (grewUp.toLowerCase() === 'yes') {
-//   alert('Yes! I did grow up in the same house as my father!');
-//   yourScore += 1;
-// } else {
-//   alert('Actually, I did grow up in the same house that my father grew up in!');
-// }
-// console.log('My first question is asking ' + UserName + ' if they knew that I grew up in the same house as my father.');
+// asking the user if they know how many siblings I have
 
-// // asking the user if they know how many siblings I have
-// var siblingAmmount = prompt('Do I have more than one sibling?');
 
-// // creating an if/else statement about my sister
-// if (siblingAmmount.toLowerCase() === 'no') {
-//   alert('That\s right, I only have one sister!');
-//   yourScore += 1;
-// }else {
-//   alert('Actually ' + UserName + ' I only have one younger sister.');
-// }
-// console.log('Asking ' + UserName + 'if they know how many siblings that I have.');
+// creating an if/else statement about my sister
+function Question2(){
+var siblingAmmount = prompt('Do I have more than one sibling?');
+if (siblingAmmount.toLowerCase() === 'no') {
+  alert('That\s right, I only have one sister!');
+  yourScore += 1;
+}else {
+  alert('Actually I only have one younger sister.');
+  console.log('Asking if they know how many siblings that I have.');
+
+}
+console.log('end of function of question2');
+}
+Question2()
 
 // // asking the user about where I went to school
 // var typeEducation = prompt('Did I go to private school from Preschool to High School?');
