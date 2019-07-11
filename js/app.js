@@ -146,10 +146,14 @@ numGuesses++;
 }
 ArrayQ1();
 
-//  // creating an alert that lets users know how well they know me
-// if (yourScore < 5){
-//   alert('Oh no your score is ' + yourScore + ' it looks like you don\'t know me that well! Visit that website to fix that!');
-//   console.log('In my if for score card');
-// } else {
-//   alert('You\'re score of ' + yourScore + ' looks pretty high! You must know me pretty well!');
-//   console.log('In my else for score card');
+ // creating an alert that lets users know how well they know me
+ function scorecard(){
+  if (yourScore < 5){
+    alert('Oh no your score is ' + yourScore + ' it looks like you don\'t know me that well! Visit that website to fix that!');
+    console.log('In my if for score card');
+  } else {
+      alert('You\'re score of ' + yourScore + ' looks pretty high! You must know me pretty well!');
+      console.log('In my else for score card');
+    }
+ }
+ scorecard();
