@@ -79,62 +79,72 @@ if (dadReads.toLowerCase() === 'no') {
 console.log('End of function question4');
 }
 Question4();
-// // asking the user if I love Nancy Drew
-// var nancyDrew = prompt('Do you think that Nancy Drew is my go to comfort book series?');
 
-// // creating an if/else statement about Nancy Drew
-// if (nancyDrew.toLowerCase() === 'yes') {
-//   alert('Yes, that\s the first thing that my dad ever read to me, so if I ever need something to cheer me up, I read any book in that series!');
-//   yourScore += 1;
-// } else{
-//   alert('Actually, my that was the first thing that my dad ever read to me, so if I ever am in a bad mood or need to not think about what I am reading I choose that!');
-// }
-// console.log('Asking ' + UserName + ' if they know that I love Nancy Drew!');
+// asking the user if I love Nancy Drew
 
-// //beginning of guessing game
 
-// var answer= 450;
-// var guess= parseInt(prompt('How many books do you think I own?'));
+// creating an if/else statement about Nancy Drew
+function Question5(){
+var nancyDrew = prompt('Do you think that Nancy Drew is my go to comfort book series?');
+if (nancyDrew.toLowerCase() === 'yes') {
+  alert('Yes, that\s the first thing that my dad ever read to me, so if I ever need something to cheer me up, I read any book in that series!');
+  yourScore ++;
+} else{
+  alert('Actually, my that was the first thing that my dad ever read to me, so if I ever am in a bad mood or need to not think about what I am reading I choose that!');
+}
+console.log('End of function Question 5');
+}
+Question5();
 
-// for (var i = 0; i < 3; i++){
-//   if (guess === answer){
-//     alert('You know how bad my book obesession is!!');
-//     yourScore += 1;
-//     break;
-//   }
-//     else if (guess > 450){
-//       guess = parseInt(prompt('That number was wrong, it was a little to high! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".'));
-//       console.log('I am in else if');
-//     }
-//     else {
-//       guess = parseInt(prompt('That number was wrong, perhaps you should try something bigger! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".'));
-//       console.log('I am in the if check');
-//     }
-// }
+//beginning of guessing game
+function Question6(){
+  var answer= 450;
+  var guess= parseInt(prompt('How many books do you think I own?'));
 
-// //  //starting my array work here
+    for (var i = 0; i < 3; i++){
+      if (guess === answer){
+      alert('You know how bad my book obesession is!!');
+      yourScore ++;
+      console.log("First if statement, should only see if break");
+      break;
+    }
+    else if (guess > 450){
+      guess = parseInt(prompt('That number was wrong, it was a little to high! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".'));
+      console.log('I am in else if');
+    }
+    else {
+      guess = parseInt(prompt('That number was wrong, perhaps you should try something bigger! As Henry Ford says "Failure is only the opportunity to being again, only this time more wisely".'));
+      console.log('I am in the else check line 117');
+    }
+  }
+}
+Question6();
 
-// var answerArray= ['Nancy Drew', 'Pride and Prejudice', 'Harry Potter and the Prisoner of Azkaban', 'Furyborn', 'The Cruel Prince'];
-// var escape= false;
-// var numGuesses= 0;
-// console.log('Starting out my array questions');
+//  //starting my array work here
+function ArrayQ1(){
+  var answerArray= ['Nancy Drew', 'Pride and Prejudice', 'Harry Potter and the Prisoner of Azkaban', 'Furyborn', 'The Cruel Prince'];
+  var escape= false;
+  var numGuesses= 0;
+  console.log('Starting out my array questions');
 
-//  while(numGuesses < 6 && escape === false){
-//  var answer= prompt('What are my top 5 favorite books?');
-//   for (var i = 0; i < answerArray.length; i++){
-//     if (answer === answerArray[i]){
-//       alert('Yay! You know about one of my favorite books!');
-//       console.log('Figuring out my array');
-//       yourScore += 1;
-//       escape = true;
-//       break;
-// }
-// }
-// numGuesses++;
-//  }
+ while(numGuesses < 6 && escape === false){
+  var answer= prompt('What are my top 5 favorite books?');
+  for (var i = 0; i < answerArray.length; i++){
+    if (answer === answerArray[i]){
+      alert('Yay! You know about one of my favorite books!');
+      console.log('Figuring out my array');
+      yourScore += 1;
+      escape = true;
+      break;
+    }
+  }
+numGuesses++;
+ }
 
-//  // creating an alert for all my books I like
-//  alert('Here is the list of all of my favorite books are Nancy Drew by Harriet Adams, Pride and Prejudice by Jane Austen, Harry Potter and the Prisoner of Azkaban by J.K. Rowling, Furyborn by Claire Legrand, and The Cruel Prince by Holly Black');
+ // creating an alert for all my books I like
+ alert('Here is the list of all of my favorite books are Nancy Drew by Harriet Adams, Pride and Prejudice by Jane Austen, Harry Potter and the Prisoner of Azkaban by J.K. Rowling, Furyborn by Claire Legrand, and The Cruel Prince by Holly Black');
+}
+ArrayQ1();
 
 //  // creating an alert that lets users know how well they know me
 // if (yourScore < 5){
@@ -143,5 +153,3 @@ Question4();
 // } else {
 //   alert('You\'re score of ' + yourScore + ' looks pretty high! You must know me pretty well!');
 //   console.log('In my else for score card');
-// }
-
