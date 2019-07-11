@@ -1,5 +1,7 @@
 "use strict"
 
+var yourScore = 0;
+
 // asking the user for their name prompt
 var UserName = prompt('Hi! My name is Adrian! What`s your name?');
 alert('Hello ' + UserName + '! It\s nice to meet you! We are going to see how well you know me with a guessing game!');
@@ -11,6 +13,7 @@ var grewUp = prompt('Do you think that I grew up in the same house that my fathe
 // creating and if/else statement about where I grew up
 if (grewUp.toLowerCase() === 'yes') {
   alert('Yes! I did grow up in the same house as my father!');
+  yourScore += 1;
 } else {
   alert('Actually, I did grow up in the same house that my father grew up in!');
 }
@@ -22,6 +25,7 @@ var siblingAmmount = prompt('Do I have more than one sibling?');
 // creating an if/else statement about my sister
 if (siblingAmmount.toLowerCase() === 'no') {
   alert('That\s right, I only have one sister!');
+  yourScore += 1;
 }else {
   alert('Actually ' + UserName + ' I only have one younger sister.');
 }
@@ -33,6 +37,7 @@ var typeEducation = prompt('Did I go to private school from Preschool to High Sc
 //creating an if/else statement about school
 if (typeEducation.toLowerCase() === 'yes') {
   alert('Yes, against my will, I attended private school from Preschool to High School');
+  yourScore += 1;
 } else {
   alert('Actually, I was forced to go to private school from Preschool through High School.');
 }
@@ -44,6 +49,7 @@ var dadReads = prompt('Do you think that it was my mom who helped me begin to lo
 // creating an if/else statement about my love of reading
 if (dadReads.toLowerCase() === 'no') {
   alert('It was actually my dad who got me to love reading!');
+  yourScore +=1;
 } else{
   alert('Actually, ' + UserName + ' it was my dad create my love of reading.');
 }
@@ -55,6 +61,7 @@ var nancyDrew = prompt('Do you think that Nancy Drew is my go to comfort book se
 // creating an if/else statement about Nancy Drew
 if (nancyDrew.toLowerCase() === 'yes') {
   alert('Yes, that\s the first thing that my dad ever read to me, so if I ever need something to cheer me up, I read any book in that series!');
+  yourScore += 1;
 } else{
   alert('Actually, my that was the first thing that my dad ever read to me, so if I ever am in a bad mood or need to not think about what I am reading I choose that!');
 }
@@ -68,6 +75,7 @@ var guess= parseInt(prompt('How many books do you think I own?'));
 for (var i = 0; i < 3; i++){
   if (guess === answer){
     alert('You know how bad my book obesession is!!');
+    yourScore += 1;
     break;
   }
     else if (guess > 450){
@@ -81,6 +89,7 @@ for (var i = 0; i < 3; i++){
 }
 
 //  //starting my array work here
+
 var answerArray= ['Nancy Drew', 'Pride and Prejudice', 'Harry Potter and the Prisoner of Azkaban', 'Furyborn', 'The Cruel Prince'];
 var escape= false;
 var numGuesses= 0;
@@ -90,13 +99,28 @@ console.log('Starting out my array questions');
  var answer= prompt('What are my top 5 favorite books?');
   for (var i = 0; i < answerArray.length; i++){
     if (answer === answerArray[i]){
-      alert('Yay you know this!');
+      alert('Yay! You know about one of my favorite books!');
+      console.log('Figuring out my array');
+      yourScore += 1;
       escape = true;
       break;
 }
 }
 numGuesses++;
  }
+
+ // creating an alert for all my books I like
+ alert('Here is the list of all of my favorite books are Nancy Drew by Harriet Adams, Pride and Prejudice by Jane Austen, Harry Potter and the Prisoner of Azkaban by J.K. Rowling, Furyborn by Claire Legrand, and The Cruel Prince by Holly Black');
+
+ // creating an alert that lets users know how well they know me
+if (yourScore < 5){
+  alert('Oh no your score is ' + yourScore + ' it looks like you don\'t know me that well! Visit that website to fix that!');
+  console.log('In my if for score card');
+} else {
+  alert('You\'re score of ' + yourScore + ' looks pretty high! You must know me pretty well!');
+  console.log('In my else for score card');
+}
+
 
 
 
