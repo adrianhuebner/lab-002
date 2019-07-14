@@ -36,7 +36,7 @@ question1();
 function question2(){
   var siblingAmmount = prompt('Do I have more than one sibling?');
   if (siblingAmmount.toLowerCase() === 'no') {
-    alert('That\s right, I only have one sister!');
+    alert('That\'s right, I only have one sister!');
     yourScore ++;
   }else {
     alert('Actually I only have one younger sister.');
@@ -87,7 +87,7 @@ question4();
 function question5(){
   var nancyDrew = prompt('Do you think that Nancy Drew is my go to comfort book series?');
   if (nancyDrew.toLowerCase() === 'yes') {
-    alert('Yes, that\s the first thing that my dad ever read to me, so if I ever need something to cheer me up, I read any book in that series!');
+    alert('Yes, that\'s the first thing that my dad ever read to me, so if I ever need something to cheer me up, I read any book in that series!');
     yourScore ++;
   } else{
     alert('Actually, my that was the first thing that my dad ever read to me, so if I ever am in a bad mood or need to not think about what I am reading I choose that!');
